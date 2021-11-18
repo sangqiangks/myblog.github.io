@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>抓包工具-Charles | 桑强的博客</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/myblog.github.io/bobi.jpeg">
+    <meta name="description" content="我有一个特点，不擅长倒下">
+    
+    <link rel="preload" href="/myblog.github.io/assets/css/0.styles.bde5a6e5.css" as="style"><link rel="preload" href="/myblog.github.io/assets/js/app.356a64eb.js" as="script"><link rel="preload" href="/myblog.github.io/assets/js/2.b9cda75c.js" as="script"><link rel="preload" href="/myblog.github.io/assets/js/17.ba95d81c.js" as="script"><link rel="prefetch" href="/myblog.github.io/assets/js/10.177d8cb6.js"><link rel="prefetch" href="/myblog.github.io/assets/js/11.926b4179.js"><link rel="prefetch" href="/myblog.github.io/assets/js/12.ee9046d9.js"><link rel="prefetch" href="/myblog.github.io/assets/js/13.7f64642f.js"><link rel="prefetch" href="/myblog.github.io/assets/js/14.fc50899a.js"><link rel="prefetch" href="/myblog.github.io/assets/js/15.8b54b8bd.js"><link rel="prefetch" href="/myblog.github.io/assets/js/16.38e7b696.js"><link rel="prefetch" href="/myblog.github.io/assets/js/18.74d7e33c.js"><link rel="prefetch" href="/myblog.github.io/assets/js/19.849b667e.js"><link rel="prefetch" href="/myblog.github.io/assets/js/20.19b537da.js"><link rel="prefetch" href="/myblog.github.io/assets/js/21.06475383.js"><link rel="prefetch" href="/myblog.github.io/assets/js/22.8ed7d7a7.js"><link rel="prefetch" href="/myblog.github.io/assets/js/23.4e9ee4d4.js"><link rel="prefetch" href="/myblog.github.io/assets/js/24.6e3ee63d.js"><link rel="prefetch" href="/myblog.github.io/assets/js/25.e900a90b.js"><link rel="prefetch" href="/myblog.github.io/assets/js/3.960b83bc.js"><link rel="prefetch" href="/myblog.github.io/assets/js/4.8a456036.js"><link rel="prefetch" href="/myblog.github.io/assets/js/5.e0851cc1.js"><link rel="prefetch" href="/myblog.github.io/assets/js/6.1416ce94.js"><link rel="prefetch" href="/myblog.github.io/assets/js/7.3ce17342.js"><link rel="prefetch" href="/myblog.github.io/assets/js/8.2b59a261.js"><link rel="prefetch" href="/myblog.github.io/assets/js/9.fb145125.js">
+    <link rel="stylesheet" href="/myblog.github.io/assets/css/0.styles.bde5a6e5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myblog.github.io/" class="home-link router-link-active"><!----> <span class="site-name">桑强的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://www.baidu.com" target="_self" class="nav-link external">
+  External
+  <!----></a></div><div class="nav-item"><a href="/自动化/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Guide
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog.github.io/language/chinese/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/myblog.github.io/other/language/english/" class="nav-link">
+  English
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog.github.io/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          python
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/python/" class="nav-link">
+  python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          自动化
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/自动化/" class="nav-link">
+  自动化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          docker
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/docker/" class="nav-link">
+  docker
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/myblog.github.io/自动化/plan.html" class="nav-link">
+  自动化
+</a></div><div class="nav-item"><a href="/myblog.github.io/other/" class="nav-link router-link-active">
+  零散文章
+</a></div><div class="nav-item"><a href="/myblog.github.io/docker/" class="nav-link">
+  docker部署
+</a></div><div class="nav-item"><a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  baidu
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://www.baidu.com" target="_self" class="nav-link external">
+  External
+  <!----></a></div><div class="nav-item"><a href="/自动化/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Guide
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog.github.io/language/chinese/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/myblog.github.io/other/language/english/" class="nav-link">
+  English
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog.github.io/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          python
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/python/" class="nav-link">
+  python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          自动化
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/自动化/" class="nav-link">
+  自动化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          docker
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/docker/" class="nav-link">
+  docker
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/myblog.github.io/自动化/plan.html" class="nav-link">
+  自动化
+</a></div><div class="nav-item"><a href="/myblog.github.io/other/" class="nav-link router-link-active">
+  零散文章
+</a></div><div class="nav-item"><a href="/myblog.github.io/docker/" class="nav-link">
+  docker部署
+</a></div><div class="nav-item"><a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  baidu
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/interview/face" class="sidebar-heading clickable"><span>面试准备 </span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/interview/face.html" class="sidebar-link">面试相关</a></li><li><a href="/myblog.github.io/interview/notes.html" class="sidebar-link">笔记</a></li><li><a href="/myblog.github.io/interview/question.html" class="sidebar-link">记录一次面试</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/RD/mq" class="sidebar-heading clickable"><span>后端知识 </span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/RD/mq.html" class="sidebar-link">MQ</a></li><li><a href="/myblog.github.io/RD/pressure.html" class="sidebar-link">压测怎么做</a></li><li><a href="/myblog.github.io/RD/docker.html" class="sidebar-link">docker</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/Linux/Markdown" class="sidebar-heading clickable"><span>前端知识</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/Linux/Markdown.html" class="sidebar-link">Markdown语法</a></li><li><a href="/myblog.github.io/Linux/LinuxCommand.html" class="sidebar-link">Linux语法</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/python/总结" class="sidebar-heading clickable"><span>python 1</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/python/总结.html" class="sidebar-link">面向对象 vs 面向过程总结</a></li><li><a href="/myblog.github.io/python/类.html" class="sidebar-link">欢迎强哥</a></li><li><a href="/myblog.github.io/python/面向对象.html" class="sidebar-link">m</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/other/jmeter" class="sidebar-heading clickable open"><span>测试工具 </span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/other/jmeter.html" class="sidebar-link">jmeter</a></li><li><a href="/myblog.github.io/other/charles.html" aria-current="page" class="active sidebar-link">charles</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myblog.github.io/other/charles.html#简介" class="sidebar-link">简介</a></li><li class="sidebar-sub-header"><a href="/myblog.github.io/other/charles.html#抓取https请求" class="sidebar-link">抓取https请求</a></li><li class="sidebar-sub-header"><a href="/myblog.github.io/other/charles.html#mock接口" class="sidebar-link">mock接口</a></li><li class="sidebar-sub-header"><a href="/myblog.github.io/other/charles.html#重定向-map-remote" class="sidebar-link">重定向-map remote</a></li><li class="sidebar-sub-header"><a href="/myblog.github.io/other/charles.html#断点" class="sidebar-link">断点</a></li><li class="sidebar-sub-header"><a href="/myblog.github.io/other/charles.html#弱网" class="sidebar-link">弱网</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/test/test" class="sidebar-heading clickable"><span>知识总结</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/test/test.html" class="sidebar-link">测试点</a></li><li><a href="/myblog.github.io/test/algorithm.html" class="sidebar-link">算法</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="抓包工具-charles"><a href="#抓包工具-charles" class="header-anchor">#</a> 抓包工具-Charles</h1> <h2 id="简介"><a href="#简介" class="header-anchor">#</a> 简介</h2> <p>Charles 是在 PC 端常用的网络封包截取工具，在做移动开发时，我们为了调试与服务器端的网络通讯协议，常常需要截取网络封包来分析。除了在做移动开发中调试端口外，Charles 也可以用于分析第三方应用的通讯协议。配合 Charles 的 SSL 功能，Charles 还可以分析 Https 协议。
+Charles 通过将自己设置成系统的网络访问代理服务器，使得所有的网络访问请求都通过它来完成，从而实现了网络封包的截取和分析。</p> <p>Charles 主要的功能包括：</p> <ul><li>截取http和https请求</li> <li>mock返回参数</li> <li>打断点，修改请求和返回</li> <li>重定向</li> <li>模拟弱网</li></ul> <p>安装和功能主页面介绍，可以看这篇文章<a href="https://juejin.cn/post/6844903665304600589" target="_blank" rel="noopener noreferrer">Charles说明<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，接下来说下我常用的功能和小技巧。</p> <h2 id="抓取https请求"><a href="#抓取https请求" class="header-anchor">#</a> 抓取https请求</h2> <p>我们装完证书，手机代理设置成功后，经常发现，http请求是鞥看了，但是https请求，还是解析不到，这是我们需要查看，proxy-ssl proxying settings 中 ssl proxying输入勾选上<br>
+host填写*，端口443，意思是，任意端口号为443的网址都可以解析，也就是说任意https请求都可以解析<br> <img src="https://hbimg.huabanimg.com/4ebf7fefb603e6fbff1a37ef70055fa239bce0751b6b6-RLyY7G_fw658/format/webp" alt=""></p> <p>配置完成后，就能成功的抓取https请求了</p> <h2 id="mock接口"><a href="#mock接口" class="header-anchor">#</a> mock接口</h2> <p>验证前端和客户端的时候，最好用的方法
+右键选择map local，就可以新增mock的接口了<br> <img src="https://hbimg.huabanimg.com/c9fea118742458322ab6c9a964da2838aaf654852db9c0-EWCtsB_fw658/format/webp" alt=""></p> <p>创建mock，把返回数据以JSON格式保存在本地</p> <p>新创建的mock，会把这个请求的方式、host、路径都给带上，local path 选择好保存在本地的mock文件</p> <p><strong>小技巧</strong><br>
+只保留路径，只有对当前路径过滤，对于host等不去做筛选，在实际工作中，经常会有几套测试环境，host是会常变的，但路径一般都是相同的，这样便于在测试环境，及上线后的验证</p> <p>Tools -&gt; Map local  查看管理的mock接口<br> <img src="https://hbimg.huabanimg.com/0a8bdfcbdfb0fcca7cc4223dda534f7a43e24666138de-Fnrmuh_fw658/format/webp" alt=""></p> <p><strong>注意</strong>
+测试中，不需要mock的时候，一定要把mock功能关掉，以免无法发现服务端问题</p> <h2 id="重定向-map-remote"><a href="#重定向-map-remote" class="header-anchor">#</a> 重定向-map remote</h2> <p>工作中，会存在着多套测试环境，有的测试环境崩了，需要指定到其它环境中，就会用到重定向<br>
+右键，选择map remote<br> <img src="https://hbimg.huabanimg.com/34a7de879465c98c38e462a992106904d2305c42181dc-Sfl325_fw658/format/webp" alt=""></p> <p>map to : 指定到的地址</p> <p><strong>小技巧</strong><br>
+实际工作中，只重定向一个接口的情况是很少见，常常是重定向一整套环境，这时，只需要填写host就可以</p> <p>Tools -&gt; Map remote 查看管理的重定向网址<br> <strong>注意</strong><br>
+测试中，不需要重定向的时候，一定要把map remote功能关掉，以免在错误的测试环境进行测试</p> <h2 id="断点"><a href="#断点" class="header-anchor">#</a> 断点</h2> <p>有的时候需要断点来查看前端，或者是后端的问题，要用到断点，既可以修改请求，也可以修改返回</p> <p>右键，选择breakpoints<br> <img src="https://hbimg.huabanimg.com/91c32901f882a7c39f4885bf5ec89e8de88efb192d22e-FRycwd_fw658/format/webp" alt=""></p> <p>重新点击一次，请求相同的请求，会出现可编辑request的界面，在这可以修改请求内容，修改完成后，点击确定</p> <p>然后出现可编辑的response界面，在这里可以修改返回内容，修改完成后，点击确定，这样，一个全新的请求，及相应的返回就出来了</p> <p><strong>小技巧</strong>
+有的时候，通过点击页面无法模拟真实用户，可以通过断点的形式，去修改参数，来看后端返回是否正常<br>
+分析前端还是后端发生问题，也常用断点去排查</p> <p>proxy -&gt; breaktpoints 查看管理的断点接口</p> <p><strong>注意</strong>
+测试中不需要断点的时候，一定要把断点的功能关掉</p> <h2 id="弱网"><a href="#弱网" class="header-anchor">#</a> 弱网</h2> <p>测试中需要模拟网络不好的时候，常用弱网</p> <p>proxy -&gt; Throttle Settings<br> <img src="https://hbimg.huabanimg.com/fa33647989ea4ff18c771eacb61b7482912635c323c78-Cansgl_fw658/format/webp" alt=""></p> <p>only for selected hosts ：勾选上指定的网址<br>
+不勾选默认是全局弱网<br>
+可以选择最大网速，网速上行、网速下行，都可以选择</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/myblog.github.io/other/jmeter.html" class="prev">
+        jmeter
+      </a></span> <span class="next"><a href="/myblog.github.io/test/test.html">
+        测试点
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myblog.github.io/assets/js/app.356a64eb.js" defer></script><script src="/myblog.github.io/assets/js/2.b9cda75c.js" defer></script><script src="/myblog.github.io/assets/js/17.ba95d81c.js" defer></script>
+  </body>
+</html>

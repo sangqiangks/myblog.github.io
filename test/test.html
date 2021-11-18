@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>支付测试用例 | 桑强的博客</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/myblog.github.io/bobi.jpeg">
+    <meta name="description" content="我有一个特点，不擅长倒下">
+    
+    <link rel="preload" href="/myblog.github.io/assets/css/0.styles.bde5a6e5.css" as="style"><link rel="preload" href="/myblog.github.io/assets/js/app.356a64eb.js" as="script"><link rel="preload" href="/myblog.github.io/assets/js/2.b9cda75c.js" as="script"><link rel="preload" href="/myblog.github.io/assets/js/23.4e9ee4d4.js" as="script"><link rel="prefetch" href="/myblog.github.io/assets/js/10.177d8cb6.js"><link rel="prefetch" href="/myblog.github.io/assets/js/11.926b4179.js"><link rel="prefetch" href="/myblog.github.io/assets/js/12.ee9046d9.js"><link rel="prefetch" href="/myblog.github.io/assets/js/13.7f64642f.js"><link rel="prefetch" href="/myblog.github.io/assets/js/14.fc50899a.js"><link rel="prefetch" href="/myblog.github.io/assets/js/15.8b54b8bd.js"><link rel="prefetch" href="/myblog.github.io/assets/js/16.38e7b696.js"><link rel="prefetch" href="/myblog.github.io/assets/js/17.ba95d81c.js"><link rel="prefetch" href="/myblog.github.io/assets/js/18.74d7e33c.js"><link rel="prefetch" href="/myblog.github.io/assets/js/19.849b667e.js"><link rel="prefetch" href="/myblog.github.io/assets/js/20.19b537da.js"><link rel="prefetch" href="/myblog.github.io/assets/js/21.06475383.js"><link rel="prefetch" href="/myblog.github.io/assets/js/22.8ed7d7a7.js"><link rel="prefetch" href="/myblog.github.io/assets/js/24.6e3ee63d.js"><link rel="prefetch" href="/myblog.github.io/assets/js/25.e900a90b.js"><link rel="prefetch" href="/myblog.github.io/assets/js/3.960b83bc.js"><link rel="prefetch" href="/myblog.github.io/assets/js/4.8a456036.js"><link rel="prefetch" href="/myblog.github.io/assets/js/5.e0851cc1.js"><link rel="prefetch" href="/myblog.github.io/assets/js/6.1416ce94.js"><link rel="prefetch" href="/myblog.github.io/assets/js/7.3ce17342.js"><link rel="prefetch" href="/myblog.github.io/assets/js/8.2b59a261.js"><link rel="prefetch" href="/myblog.github.io/assets/js/9.fb145125.js">
+    <link rel="stylesheet" href="/myblog.github.io/assets/css/0.styles.bde5a6e5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myblog.github.io/" class="home-link router-link-active"><!----> <span class="site-name">桑强的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://www.baidu.com" target="_self" class="nav-link external">
+  External
+  <!----></a></div><div class="nav-item"><a href="/自动化/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Guide
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog.github.io/language/chinese/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/myblog.github.io/test/language/english/" class="nav-link">
+  English
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog.github.io/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          python
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/python/" class="nav-link">
+  python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          自动化
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/自动化/" class="nav-link">
+  自动化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          docker
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/docker/" class="nav-link">
+  docker
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/myblog.github.io/自动化/plan.html" class="nav-link">
+  自动化
+</a></div><div class="nav-item"><a href="/myblog.github.io/other/" class="nav-link">
+  零散文章
+</a></div><div class="nav-item"><a href="/myblog.github.io/docker/" class="nav-link">
+  docker部署
+</a></div><div class="nav-item"><a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  baidu
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://www.baidu.com" target="_self" class="nav-link external">
+  External
+  <!----></a></div><div class="nav-item"><a href="/自动化/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Guide
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog.github.io/language/chinese/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/myblog.github.io/test/language/english/" class="nav-link">
+  English
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog.github.io/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          python
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/python/" class="nav-link">
+  python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          自动化
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/自动化/" class="nav-link">
+  自动化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          docker
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/docker/" class="nav-link">
+  docker
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/myblog.github.io/自动化/plan.html" class="nav-link">
+  自动化
+</a></div><div class="nav-item"><a href="/myblog.github.io/other/" class="nav-link">
+  零散文章
+</a></div><div class="nav-item"><a href="/myblog.github.io/docker/" class="nav-link">
+  docker部署
+</a></div><div class="nav-item"><a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  baidu
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/interview/face" class="sidebar-heading clickable"><span>面试准备 </span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/interview/face.html" class="sidebar-link">面试相关</a></li><li><a href="/myblog.github.io/interview/notes.html" class="sidebar-link">笔记</a></li><li><a href="/myblog.github.io/interview/question.html" class="sidebar-link">记录一次面试</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/RD/mq" class="sidebar-heading clickable"><span>后端知识 </span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/RD/mq.html" class="sidebar-link">MQ</a></li><li><a href="/myblog.github.io/RD/pressure.html" class="sidebar-link">压测怎么做</a></li><li><a href="/myblog.github.io/RD/docker.html" class="sidebar-link">docker</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/Linux/Markdown" class="sidebar-heading clickable"><span>前端知识</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/Linux/Markdown.html" class="sidebar-link">Markdown语法</a></li><li><a href="/myblog.github.io/Linux/LinuxCommand.html" class="sidebar-link">Linux语法</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/python/总结" class="sidebar-heading clickable"><span>python 1</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/python/总结.html" class="sidebar-link">面向对象 vs 面向过程总结</a></li><li><a href="/myblog.github.io/python/类.html" class="sidebar-link">欢迎强哥</a></li><li><a href="/myblog.github.io/python/面向对象.html" class="sidebar-link">m</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/other/jmeter" class="sidebar-heading clickable"><span>测试工具 </span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/other/jmeter.html" class="sidebar-link">jmeter</a></li><li><a href="/myblog.github.io/other/charles.html" class="sidebar-link">charles</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/test/test" class="sidebar-heading clickable open active"><span>知识总结</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/test/test.html" aria-current="page" class="active sidebar-link">测试点</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myblog.github.io/test/test.html#支付测试用例" class="sidebar-link">支付测试用例</a></li><li class="sidebar-sub-header"><a href="/myblog.github.io/test/test.html#mysql" class="sidebar-link">mysql</a></li></ul></li><li><a href="/myblog.github.io/test/algorithm.html" class="sidebar-link">算法</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="支付测试用例"><a href="#支付测试用例" class="header-anchor">#</a> 支付测试用例</h2> <p>ui
+界面文字，没有错别字，不出现遮挡重叠
+图片清晰，动画不卡顿</p> <p>点击支付-&gt;选择支付方式-&gt;确认金额-&gt;输入密码-&gt;成功支付
+1.点击支付，正常跳转页面，唤起支付中台，生成一笔支付记录
+2.点击支付，跳转页面，返回上一界面，或取消，取消成功，并可以重复支付</p> <p>3.信用卡，储蓄卡，网银，余额，第三方支付，</p> <p>4.一个订单支付，金额长度，最大值，最小值，特殊符号，是否是人民币
+5.多订单支付，支付金额的正确，支付成功</p> <p>6.指纹，人脸，密码，验证码，免密支付</p> <p>7.支付成功，支付记录为支付成功，扣款成功
+8.第三方支付记录为支付成功，扣款成功
+9.商户收到支付金额，订单状态改变为已支付</p> <p>用户口款成功，收到支付</p> <p>异常
+没有绑定银行卡，没有余额
+取消支付
+密码错误，一次，多次
+用户银行余额不足或被冻结
+重复支付一笔订单，返回取消
+重复支付多笔订单，是否正常，会不会触发安全警告</p> <p>弱网
+网络不好的场景下支付</p> <p>中断
+电话中断，是否可以继续支付
+支付完成中断，未确认支付成功时，刷新请求是是否支付成功</p> <p>兼容：
+不同设备，系统，机型，分辨率的支付</p> <p>性能：
+支付占用多大的cpu，内存
+在cpu内存不够时，支付是否可以正常进行，会不会出现app崩溃，支付异常
+多用户同一时间支付，支付成功率为多少，是否过低
+多用户同一时间支付，支付响应时间，是否过长
+多用户同一时间支付，支付失败，是否可以重新继续支付</p> <p>安全
+支付过程中，被登录挤退
+支付账号中风控，是否引导解除风控方式
+支付环境异常，如不是常用设备，不符合常用习惯，或者支付金额过大，暂时不能支付，并进一步引导
+密码支付错误，一次，多次</p> <p>点击发送-&gt;选择图片-&gt;发送-&gt;接收
+我-&gt;用-&gt;水杯-&gt;喝水
+装水，喝水</p> <p>电梯
+按钮-&gt;开门-&gt;关门-&gt;按楼层-&gt;到达-&gt;开门
+谁-&gt;乘坐-&gt;电梯</p> <h2 id="mysql"><a href="#mysql" class="header-anchor">#</a> mysql</h2> <p>mysql架构
+应用层：负责连接客户端，响应客户端请求，返回数据</p> <p>逻辑层：包括sqk接口，解析器，优化器，cache和buffer</p> <p>数据库引擎层：innodb和myisam</p> <p>物理层：文件存储，日志</p> <p>sql语言执行过程
+1.客户端先进行身份认证和权限相关</p> <p>2.执行语句会先查询缓存</p> <p>3.没有命中缓存，sql语句就会经过解析器，分析语句，包括语法检查</p> <p>4.通过优化器，按照mysql认为嘴优的方案去执行</p> <p>5.执行语句，从存储引擎返回数据</p> <p>mysql的共享锁排它锁
+共享锁也称为读锁，多个用户在同一时刻读取同一资源，而且不互相干扰</p> <p>排它锁也叫写锁，会阻塞其它的写锁和读锁，确保在同一时刻只给一个用户写入并防止其他用户读取这一资源</p> <p>表级锁：对整张表加锁，加锁快，并发能力低</p> <p>行锁：锁住某一行，如果表存在索引，记录锁是锁在索引上的，如果表没有索引，innodb会创建一个隐藏的索引加锁。
+优点：行级锁会大大减少数据库操作的冲突，加锁粒度最小，并发度高
+缺点：加锁开销最大，加锁慢，会出现死锁</p> <p>如何解决死锁</p> <ol><li>加锁的时，给锁设置顺序，时限</li> <li>放弃锁的请求，或者给几个线程设置优先级，让几个线程回退，剩下的线程会按照优先级去进行操作</li></ol> <p>乐观锁：对于数据库冲突保持一种乐观的态度，操作数据的时候不会加锁，只有提交数据时才去验证数据是否存在冲突</p> <p>悲观锁：对于数据冲突保持一种悲观的态度，修改数据之前把数据锁住，然后再进行数据读写，在它释放锁之前任何人都不能对其数据进行操作，一般数据库锁是按照悲观锁机制去实现的</p> <p>innodb支持事务，基于聚簇索引建立的，支持表级锁和行级锁，支持外键，适合数据增删改查频繁的情况
+事务内的语句，要么全部执行成功，要么全部执行失败</p> <ul><li>原子性：一个事务的所有操作，要么全部完成，要么全部不完成</li> <li>一致性：事务执行前后数据库状态保存一致</li> <li>隔离性：多个并发事务对数据库进行操作，之间互不干扰</li> <li>持久性：事务执行完毕，对数据修改是永久的，系统故障也不会丢失</li></ul> <p>索引是一种数据结构，关系型数据库中，索引具体是一种对数据库中一列或多列的值进行排序的存储结构</p> <p>索引优点：
+提高数据查询的效率，</p> <p>常见索引
+b-索引 哈希索引 全文索引</p> <p>简述mysql优化流程</p> <ol><li>首先通过慢日志定位执行较慢的sql语句</li> <li>利用explain对这些关键字段进行分析</li> <li>根据分析结果进行优化</li></ol> <p>mysql主从复制</p> <p>优点：读写分离，提升数据库负载性能，容灾</p> <p>流程：</p> <ol><li>事务完成前，主库在binlog上记录这些改变，在binlog完成写入后，主库告知存储引擎提交事务</li> <li>从库将binlog复制到对应的中继日志，将这些事件写入中继日志</li></ol> <p>sql常用语句</p> <div class="language- extra-class"><pre class="language-text"><code>ssh root@8.140.30.22
+mysql -uroot -p
+show databases;
+create database testdb;
+drop database test;
+desc testdb;
+use testdb;
+create table book(id int,bookname varchar(1024),size int);
+退出mysql：exit
+导入数据：source 路径
+查看数据库版本号：select verson();
+查看当前数据库：select database();
+\c 终止一条sql语句的输入
+select id from 表 group by ID having avg&gt;60
+limit a,b 后缀两个参数的时候（/*参数必须是一个整数常量*/），其中a是指记录开始的偏移量,b是指从第a+1条开始，取b条记录。
+
+group by 分组求和=相同的求和后分组
+sum  列全部求和
+insert into students(列名）values(值名)
+delete  from  表名  where  条件
+select * 
+from 表名
+where 列名 =或者in (select 列名
+	                  from 表名
+					 	   where 条件)
+
+   左联查：
+   select *
+   from 表1
+	left join 表2
+	     on 表1.列 = 表2.列
+	 left join 表3
+	   on 表1.列 = 表3.列 或者 表2.列 = 表3.列
+where 条件
+update 表名
+     set 列名 = 新值
+   where 列名 = 旧值
+
+</code></pre></div><p>redis
+redis数据类型；string字符串，list列表，hash，set，zset</p> <p>什么情况下使用redis</p> <ol><li>针对热点数据进行缓存</li> <li>针对特定西安市数据存放</li> <li>分布缓存</li></ol> <p>什么数据可以放缓存？</p> <ol><li>不需要实时更新但是又极其消耗数据库的数据</li> <li>需要实时更新，但是更新频率不高的数据</li> <li>某个时刻访问量极大，而且更新很频繁的数据</li></ol> <p>什么数据不能放缓存？
+涉及到钱、密匙、业务关键核心数据等</p> <p>redis和memecache的区别</p> <ol><li>redis是单线程模型，memecach是多线程异步io</li> <li>redis支持数据持久化，memecach不支持</li> <li>redis支持数据格式更多</li></ol> <p>redis集群部署模式</p> <ol><li>主从复制</li> <li>哨兵模式</li></ol> <p>redis常用命令
+del
+set
+hset
+get
+hget
+len
+lset
+sadd</p> <p>redis和mysql的区别
+类型上：mysq是关系型数据库，redis是非关系型数据库
+作用上：mysql用于持久化的存储数据到硬盘，但是速度较慢
+redis用户存储到内存，读取速度快
+redis对内存的要求高
+mysql对内存要求比较高
+mysql偏向于存数据，redis偏向快速取数据</p> <p>mongodb、mysql、redis
+mysql的更新是直接写入硬盘，性能低
+redis是写入内存，高性能
+MongoDB是先写入内存，然后持久化到硬盘</p> <p>关系型数据库和非关系型数据库<br>
+1、数据存储方式不同：关系数据库为表格形式，非关系数据库为文档或图结构</p> <p>2、扩展方式不同：关系数据库可纵向扩展，可提高处理能力，非关系数据库为天然分布式，通过更多的数据服务器来分担负载</p> <p>3、事务处理支持不同：关系数据库善于处理事务原子性细粒度控制，方便事务回滚，非关系数据库着重于处理大数据。</p> <p>app
+adb命令
+adb install/uninstall
+adb logcat
+adb shell monkey
+adb shell dumpsys batterystats | grep packagename
+adb shell dumsys meminfo
+adb shell dumsys cupinfo
+adb shell dumsys gfxinfo</p> <p>明天准备专项测试
+app专项
+自动化专项，接口（登录，发送测试接口请求，请求带上获取的cookie，获取返回值，对返回值进行断言，包括sql查询验证）
+配置文件：</p> <ol><li>登录的cookie</li> <li></li></ol> <p>性能测试也看一下
+再记下项目
+rpc es
+消息队列
+moco开源框架的mock服务 还有JSON server  easy mock</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/myblog.github.io/other/charles.html" class="prev">
+        charles
+      </a></span> <span class="next"><a href="/myblog.github.io/test/algorithm.html">
+        算法
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myblog.github.io/assets/js/app.356a64eb.js" defer></script><script src="/myblog.github.io/assets/js/2.b9cda75c.js" defer></script><script src="/myblog.github.io/assets/js/23.4e9ee4d4.js" defer></script>
+  </body>
+</html>

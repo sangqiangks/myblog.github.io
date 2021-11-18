@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>面向对象 vs 面向过程总结 | 桑强的博客</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/myblog.github.io/bobi.jpeg">
+    <meta name="description" content="我有一个特点，不擅长倒下">
+    
+    <link rel="preload" href="/myblog.github.io/assets/css/0.styles.bde5a6e5.css" as="style"><link rel="preload" href="/myblog.github.io/assets/js/app.356a64eb.js" as="script"><link rel="preload" href="/myblog.github.io/assets/js/2.b9cda75c.js" as="script"><link rel="preload" href="/myblog.github.io/assets/js/19.849b667e.js" as="script"><link rel="prefetch" href="/myblog.github.io/assets/js/10.177d8cb6.js"><link rel="prefetch" href="/myblog.github.io/assets/js/11.926b4179.js"><link rel="prefetch" href="/myblog.github.io/assets/js/12.ee9046d9.js"><link rel="prefetch" href="/myblog.github.io/assets/js/13.7f64642f.js"><link rel="prefetch" href="/myblog.github.io/assets/js/14.fc50899a.js"><link rel="prefetch" href="/myblog.github.io/assets/js/15.8b54b8bd.js"><link rel="prefetch" href="/myblog.github.io/assets/js/16.38e7b696.js"><link rel="prefetch" href="/myblog.github.io/assets/js/17.ba95d81c.js"><link rel="prefetch" href="/myblog.github.io/assets/js/18.74d7e33c.js"><link rel="prefetch" href="/myblog.github.io/assets/js/20.19b537da.js"><link rel="prefetch" href="/myblog.github.io/assets/js/21.06475383.js"><link rel="prefetch" href="/myblog.github.io/assets/js/22.8ed7d7a7.js"><link rel="prefetch" href="/myblog.github.io/assets/js/23.4e9ee4d4.js"><link rel="prefetch" href="/myblog.github.io/assets/js/24.6e3ee63d.js"><link rel="prefetch" href="/myblog.github.io/assets/js/25.e900a90b.js"><link rel="prefetch" href="/myblog.github.io/assets/js/3.960b83bc.js"><link rel="prefetch" href="/myblog.github.io/assets/js/4.8a456036.js"><link rel="prefetch" href="/myblog.github.io/assets/js/5.e0851cc1.js"><link rel="prefetch" href="/myblog.github.io/assets/js/6.1416ce94.js"><link rel="prefetch" href="/myblog.github.io/assets/js/7.3ce17342.js"><link rel="prefetch" href="/myblog.github.io/assets/js/8.2b59a261.js"><link rel="prefetch" href="/myblog.github.io/assets/js/9.fb145125.js">
+    <link rel="stylesheet" href="/myblog.github.io/assets/css/0.styles.bde5a6e5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myblog.github.io/" class="home-link router-link-active"><!----> <span class="site-name">桑强的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://www.baidu.com" target="_self" class="nav-link external">
+  External
+  <!----></a></div><div class="nav-item"><a href="/自动化/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Guide
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog.github.io/language/chinese/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/myblog.github.io/python/language/english/" class="nav-link">
+  English
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog.github.io/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          python
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/python/" class="nav-link router-link-active">
+  python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          自动化
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/自动化/" class="nav-link">
+  自动化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          docker
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/docker/" class="nav-link">
+  docker
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/myblog.github.io/自动化/plan.html" class="nav-link">
+  自动化
+</a></div><div class="nav-item"><a href="/myblog.github.io/other/" class="nav-link">
+  零散文章
+</a></div><div class="nav-item"><a href="/myblog.github.io/docker/" class="nav-link">
+  docker部署
+</a></div><div class="nav-item"><a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  baidu
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://www.baidu.com" target="_self" class="nav-link external">
+  External
+  <!----></a></div><div class="nav-item"><a href="/自动化/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Guide
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/myblog.github.io/language/chinese/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/myblog.github.io/python/language/english/" class="nav-link">
+  English
+</a></li></ul></div></div><div class="nav-item"><a href="/myblog.github.io/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow down"></span></button> <button type="button" aria-label="分类" class="mobile-dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          python
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/python/" class="nav-link router-link-active">
+  python
+</a></li></ul></li><li class="dropdown-item"><h4>
+          自动化
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/自动化/" class="nav-link">
+  自动化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          docker
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/myblog.github.io/docker/" class="nav-link">
+  docker
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/myblog.github.io/自动化/plan.html" class="nav-link">
+  自动化
+</a></div><div class="nav-item"><a href="/myblog.github.io/other/" class="nav-link">
+  零散文章
+</a></div><div class="nav-item"><a href="/myblog.github.io/docker/" class="nav-link">
+  docker部署
+</a></div><div class="nav-item"><a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  baidu
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/interview/face" class="sidebar-heading clickable"><span>面试准备 </span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/interview/face.html" class="sidebar-link">面试相关</a></li><li><a href="/myblog.github.io/interview/notes.html" class="sidebar-link">笔记</a></li><li><a href="/myblog.github.io/interview/question.html" class="sidebar-link">记录一次面试</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/RD/mq" class="sidebar-heading clickable"><span>后端知识 </span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/RD/mq.html" class="sidebar-link">MQ</a></li><li><a href="/myblog.github.io/RD/pressure.html" class="sidebar-link">压测怎么做</a></li><li><a href="/myblog.github.io/RD/docker.html" class="sidebar-link">docker</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/Linux/Markdown" class="sidebar-heading clickable"><span>前端知识</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/Linux/Markdown.html" class="sidebar-link">Markdown语法</a></li><li><a href="/myblog.github.io/Linux/LinuxCommand.html" class="sidebar-link">Linux语法</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/python/总结" class="sidebar-heading clickable open active"><span>python 1</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/python/总结.html" class="active sidebar-link">面向对象 vs 面向过程总结</a></li><li><a href="/myblog.github.io/python/类.html" class="sidebar-link">欢迎强哥</a></li><li><a href="/myblog.github.io/python/面向对象.html" class="sidebar-link">m</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/other/jmeter" class="sidebar-heading clickable"><span>测试工具 </span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/other/jmeter.html" class="sidebar-link">jmeter</a></li><li><a href="/myblog.github.io/other/charles.html" class="sidebar-link">charles</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/myblog.github.io/test/test" class="sidebar-heading clickable"><span>知识总结</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/myblog.github.io/test/test.html" class="sidebar-link">测试点</a></li><li><a href="/myblog.github.io/test/algorithm.html" class="sidebar-link">算法</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="面向对象-vs-面向过程总结"><a href="#面向对象-vs-面向过程总结" class="header-anchor">#</a> 面向对象 vs 面向过程总结</h1> <p>面向过程的程序设计的核心是过程（流水线式思维），过程即解决问题的步骤
+优点：极大的降低了写程序的复杂度，只需要顺序写，堆叠代码即可
+缺点：一套流水线或者流程就是用来解决一个问题，代码牵一发而动全身
+面向对象的程序设计的核心是对象
+优点：解决了程序的扩展性。对某一个对象单独修改，会立刻反映到整个体系中
+缺点：可控性差，无法向面向过程的程序设计流水线式的可以很精准的预测问题的处理流程和结果，面向对象的程序一旦开始就由对象之间的交互解决问题</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/myblog.github.io/Linux/LinuxCommand.html" class="prev">
+        Linux语法
+      </a></span> <span class="next"><a href="/myblog.github.io/python/类.html">
+        欢迎强哥
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myblog.github.io/assets/js/app.356a64eb.js" defer></script><script src="/myblog.github.io/assets/js/2.b9cda75c.js" defer></script><script src="/myblog.github.io/assets/js/19.849b667e.js" defer></script>
+  </body>
+</html>
